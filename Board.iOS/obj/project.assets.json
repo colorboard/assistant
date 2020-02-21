@@ -1213,11 +1213,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ilabrejtburg/Projects/Board/Board.iOS/Board.iOS.csproj",
+      "projectUniqueName": "/Users/ilabrejtburg/Projects/assistant/Board.iOS/Board.iOS.csproj",
       "projectName": "Board.iOS",
-      "projectPath": "/Users/ilabrejtburg/Projects/Board/Board.iOS/Board.iOS.csproj",
+      "projectPath": "/Users/ilabrejtburg/Projects/assistant/Board.iOS/Board.iOS.csproj",
       "packagesPath": "/Users/ilabrejtburg/.nuget/packages/",
-      "outputPath": "/Users/ilabrejtburg/Projects/Board/Board.iOS/obj/",
+      "outputPath": "/Users/ilabrejtburg/Projects/assistant/Board.iOS/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -1232,8 +1232,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "/Users/ilabrejtburg/Projects/Board/Board/Board.csproj": {
-              "projectPath": "/Users/ilabrejtburg/Projects/Board/Board/Board.csproj"
+            "/Users/ilabrejtburg/Projects/assistant/Board/Board.csproj": {
+              "projectPath": "/Users/ilabrejtburg/Projects/assistant/Board/Board.csproj"
             }
           }
         }

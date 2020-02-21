@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{9125AB49-FD56-4618-B8FA-921100261A9C}|Default">
+  <MonoDevelop.Ide.ItemProperties.Board.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.B839A616-5B4B-44AF-89C5-5E40957FF303" />
+  <MonoDevelop.Ide.ItemProperties.Board.Android PreferredExecutionTarget="Android.Nexus_5X_API_29_x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Board.iOS/Main.cs">
+    <Files>
+      <File FileName="Board.iOS/Main.cs" Line="17" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Board" expanded="True">
+            <Node name="Board" expanded="True" />
+            <Node name="Board.iOS" expanded="True">
+              <Node name="Main.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

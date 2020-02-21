@@ -39,5 +39,16 @@ namespace Board.Service
             Result result = JsonConvert.DeserializeObject<Result>(await client.DownloadStringTaskAsync(this.Address + "/packages/install/" + package.Identifier));
             return result;
         }
+
+        public async Task<Result> OpenPackage(Package package)
+        {
+            Result result = JsonConvert.DeserializeObject<Result>(await client.DownloadStringTaskAsync(this.Address + "/packages/open/" + package.Identifier));
+            return result;
+        }
+
+        public async Task<string> RunningPackage()
+        {
+            return await client.DownloadStringTaskAsync(this.Address + "/packages/running");
+        }
     }
 }

@@ -3,23 +3,21 @@
             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
             ios:NavigationPage.PrefersLargeTitles="true">
     <ContentPage Title="Установлено" IconImageSource="ic_installed">
-        <ListView x:Name="installedList" HasUnevenRows="True" SeparatorVisibility="None" SelectionMode="None">
+        <ListView x:Name="installedList" HasUnevenRows="True" SelectionMode="None">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <ViewCell>
-                        <Frame Margin="10, 5, 10, 5">
-                            <StackLayout Padding="0" Spacing="20" Orientation="Horizontal">
-                                <Frame BackgroundColor="Black" CornerRadius="8" Padding="5" HasShadow="False" VerticalOptions="Center">
-                                    <Image Source="{Binding Icon}" HeightRequest="40" WidthRequest="40" Aspect="AspectFit" />
-                                </Frame>
-                                <StackLayout Spacing="5">
-                                    <Label Text="{Binding Title}" FontAttributes="Bold" />
-                                    <Label Text="{Binding Description}" />
-                                    <Label Text="{Binding Developer.Name}" Opacity=".5"/>
-                                </StackLayout>
-                                <ImageButton Source="ic_delete" BackgroundColor="Transparent" Clicked="DeleteButton_Clicked" />
+                    <ViewCell Tapped="OpenPackage_Tapped">
+                        <StackLayout Padding="25, 15, 25, 15" Spacing="20" Orientation="Horizontal">
+                            <Frame BackgroundColor="Black" CornerRadius="8" Padding="5" HasShadow="False" VerticalOptions="Center">
+                                <Image Source="{Binding Icon}" HeightRequest="40" WidthRequest="40" Aspect="AspectFit" />
+                            </Frame>
+                            <StackLayout Spacing="2">
+                                <Label Text="{Binding Title}" FontAttributes="Bold" FontSize="Large" />
+                                <Label Text="{Binding Description}" />
+                                <Label Text="{Binding Developer.Name}" Opacity=".5"/>
                             </StackLayout>
-                        </Frame>
+                            <ImageButton HorizontalOptions="EndAndExpand" Source="ic_delete" BackgroundColor="Transparent" Clicked="DeleteButton_Clicked" />
+                        </StackLayout>
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
@@ -27,23 +25,21 @@
     </ContentPage>
 
     <ContentPage Title="Магазин" IconImageSource="ic_store">
-        <ListView x:Name="storeList" HasUnevenRows="True" SeparatorVisibility="None" SelectionMode="None">
+        <ListView x:Name="storeList" HasUnevenRows="True" SelectionMode="None">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <ViewCell>
-                        <Frame Margin="10, 5, 10, 5">
-                            <StackLayout Padding="0" Spacing="20" Orientation="Horizontal">
-                                <Frame BackgroundColor="Black" CornerRadius="8" Padding="5" HasShadow="False" VerticalOptions="Center">
-                                    <Image Source="{Binding Icon}" HeightRequest="40" WidthRequest="40" Aspect="AspectFit" />
-                                </Frame>
-                                <StackLayout Spacing="5">
-                                    <Label Text="{Binding Title}" FontAttributes="Bold" />
-                                    <Label Text="{Binding Description}" />
-                                    <Label Text="{Binding Developer.Name}" Opacity=".5"/>
-                                </StackLayout>
-                                <ImageButton Source="ic_download" BackgroundColor="Transparent" Clicked="InstallButton_Clicked" />
+                    <ViewCell Tapped="PackageDetails_Tapped">
+                        <StackLayout Padding="25, 15, 25, 15" Spacing="20" Orientation="Horizontal">
+                            <Frame BackgroundColor="Black" CornerRadius="8" Padding="5" HasShadow="False" VerticalOptions="Center">
+                                <Image Source="{Binding Icon}" HeightRequest="40" WidthRequest="40" Aspect="AspectFit" />
+                            </Frame>
+                            <StackLayout Spacing="2">
+                                <Label Text="{Binding Title}" FontAttributes="Bold" FontSize="Large" />
+                                <Label Text="{Binding Description}" />
+                                <Label Text="{Binding Developer.Name}" Opacity=".5"/>
                             </StackLayout>
-                        </Frame>
+                            <ImageButton HorizontalOptions="EndAndExpand" Source="ic_download" BackgroundColor="Transparent" Clicked="InstallButton_Clicked" />
+                        </StackLayout>
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>

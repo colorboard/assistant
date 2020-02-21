@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Board.Pages.PackageDetailsPage" Title="{Binding Title}">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="ic_like" Text="Нравится" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <TableView Intent="Settings" HasUnevenRows="True">
+            <TableRoot>
+                <TableSection>
+                    <ViewCell>
+                        <StackLayout Padding="0, 30, 0, 30">
+                            <Frame BackgroundColor="Black" CornerRadius="8" Padding="5" HasShadow="False" HorizontalOptions="Center">
+                                <Image Source="{Binding Icon}" HeightRequest="40" WidthRequest="40" Aspect="AspectFit" />
+                            </Frame>
+                            <Label Text="{Binding Title}" FontAttributes="Bold" FontSize="35" HorizontalTextAlignment="Center" Padding="0, 10, 0, 0" />
+                            <Label Text="{Binding Developer.Name}" HorizontalTextAlignment="Center" FontSize="Large" Opacity=".5" />
+                        </StackLayout>
+                    </ViewCell>
+                    <TextCell Detail="Лайков" Text="{Binding Likes}" />
+                    <TextCell Detail="Дата создания" Text="{Binding Created_At}" />
+                </TableSection>
+
+                <TableSection Title="Описание">
+                    <ViewCell>
+                        <Label Text="{Binding Description}" Padding="15" />
+                    </ViewCell>
+                </TableSection>
+
+                <TableSection Title="Детали">
+                    <TextCell Detail="Версия" Text="{Binding Version}" />
+                    <TextCell Detail="Идентификатор" Text="{Binding Identifier}" />
+                </TableSection>
+
+                <TableSection Title="Разработчик">
+                    <TextCell Detail="Имя" Text="{Binding Developer.Name}" />
+                    <TextCell Detail="Эл. почта" Text="{Binding Developer.Email}" />
+                    <TextCell Detail="Веб-сайт" Text="{Binding Developer.Website}" />
+                </TableSection>
+            </TableRoot>
+        </TableView>
+    </ContentPage.Content>
+</ContentPage>

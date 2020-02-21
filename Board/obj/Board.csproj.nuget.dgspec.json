@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ilabrejtburg/Projects/Board/Board/Board.csproj": {}
+    "/Users/ilabrejtburg/Projects/assistant/Board/Board.csproj": {}
   },
   "projects": {
-    "/Users/ilabrejtburg/Projects/Board/Board/Board.csproj": {
+    "/Users/ilabrejtburg/Projects/assistant/Board/Board.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ilabrejtburg/Projects/Board/Board/Board.csproj",
+        "projectUniqueName": "/Users/ilabrejtburg/Projects/assistant/Board/Board.csproj",
         "projectName": "Board",
-        "projectPath": "/Users/ilabrejtburg/Projects/Board/Board/Board.csproj",
+        "projectPath": "/Users/ilabrejtburg/Projects/assistant/Board/Board.csproj",
         "packagesPath": "/Users/ilabrejtburg/.nuget/packages/",
-        "outputPath": "/Users/ilabrejtburg/Projects/Board/Board/obj/",
+        "outputPath": "/Users/ilabrejtburg/Projects/assistant/Board/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ilabrejtburg/.config/NuGet/NuGet.Config"

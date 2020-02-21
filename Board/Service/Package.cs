@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.IO;
 using System.Linq;
@@ -37,7 +36,7 @@ namespace Board.Service
 
             set { this._Icon = value; }
         }
-        public string CreatedAt { get; set; }
+        public string Created_At { get; set; }
     }
 
     public class Result
